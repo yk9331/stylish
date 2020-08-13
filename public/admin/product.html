@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Products Management</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./stylesheet/normalize.css">
+        <link rel="stylesheet" href="./stylesheet/style.css"> 
+    </head>
+    <body>
+        <header>
+            <h1>Products Management</h1>
+            <h2>Add New Product</h2>
+        </header>
+        <main>
+            <form id="product-form"action="/admin/product" method="post" enctype="multipart/form-data">
+                <section class="info product-info">
+                    <h3>Product Info</h3>
+                    <div>
+                        <label for="product_id">ID</label>
+                        <input id="product_id" name="product_id" type="number" required>
+                    </div>
+                    <div>
+                        <label for="category">Category</label>
+                        <select id="category" name="category">
+                            <option value="0">Choose Category</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="title">Title</label>
+                        <input id="title" name="title" type="text" required>
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" required></textarea>
+                    </div>
+                    <div>
+                        <label for="price">Price</label>
+                        <input id="price" name="price" type="number" required>
+                    </div>
+                    <div>
+                        <label for="texture">Texture</label>
+                        <input id="texture" name="texture" type="text" required>
+                    </div>
+                    <div>
+                        <label for="wash">Wash</label>
+                        <input id="wash" name="wash" type="text" required>
+                    </div>
+                    <div>
+                        <label for="place-of-production">Place of Production</label>
+                        <select id="place-of-production" name="place_of_production">
+                            <option value="0">Choose Place of Production</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="note">Note</label>
+                        <input id="note" name="note" type="text">
+                    </div>
+                    <div>
+                        <label for="story">Story</label>
+                        <textarea id="story" name="story"></textarea>
+                    </div>
+                    <div>
+                        <label for="main-image">Main Image</label>
+                        <input id="main-image" name="main-image" type="file" required>
+                    </div>
+                    <div>
+                        <label for="other-images">Other Images</label>
+                        <input id="other-images" name="other-images" type="file" multiple>
+                    </div>
+                </section>
+                <section class="stock-info">
+                    <h3>Add to Stock</h3>
+                    <div id="stock-container">
+                        <button id="add-color-btn">Add Color</button>
+                    </div>
+                </section>
+                <button id="submit-btn" type="submit">Submit Product</button>
+                <input id="variant" name="variant" hidden>
+            </form>
+        </main>
+        <script src="./javascript/lib.js"></script>
+        <script src="./javascript/product.js"></script>
+    </body>
+</html>

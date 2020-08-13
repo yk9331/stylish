@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stylish</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet/normalize.css">
+        <link rel="stylesheet" href="stylesheet/style.css"> 
+    </head>
+    <body>
+        <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId            : '364148884542547',
+                autoLogAppEvents : true,
+                xfbml            : true,
+                version          : 'v7.0'
+              });
+            };
+          </script>
+          <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+       
+        <header>
+            <div class="login-wrapper">
+            <div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width="" scope="public_profile,email" onlogin="checkLoginState();"></div>
+            </div>
+        </header>
+
+       
+        <main id= "info">
+
+        </main>
+
+        <script src="javascript/facebook_login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+main{
+  margin-top: 100px;
+  text-align: center;
+}
+
+main .wrapper{
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+h2{
+  margin-top: 10%;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 15px;
+}
+
+#number{
+  background-color: #eeeeee;
+  padding: 5px 10px;
+}
+
+.more{
+  margin-top: 40px;
+}

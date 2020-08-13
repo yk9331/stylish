@@ -1,0 +1,110 @@
+main{
+  margin-top: 100px;
+}
+
+main .wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form{
+  width: 100%;
+  margin: 40px auto 20px;
+  padding: 20px;
+  max-width: 300px;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #bbbbbb;
+}
+
+.form label{
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.form input{
+  border: 1px solid #979797;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+}
+
+.form button {
+  margin-top: 40px;
+  height: 40px;
+}
+
+.form p{
+  font-size: 0.9rem;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.form a{
+  text-decoration: underline;
+}
+
+.login-wrapper{
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px #bbbbbb;
+  display: none;
+}
+
+.form .message{
+  display: none;
+  color: #bababa;
+  font-weight: 600; 
+  letter-spacing: 2px;
+}
+
+.form .error{
+  color: #cd4d22;
+}
+
+.user-info{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 980px;
+  display: none;
+  justify-content: center;
+}
+
+.avatar{
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  margin: 5%;
+}
+
+.detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:  5%;
+}
+
+.detail .id{
+  color: #bababa;
+  margin: 0;
+  font-weight: 600; 
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+.detail .name{
+  letter-spacing: 6px;
+  font-weight: 600; 
+  font-size: 1.2em;
+  margin: 5px 0 20px 0;
+}
+
+.detail .email{
+  color: #bababa;
+  margin: 0;
+  font-weight: 400; 
+  letter-spacing: 4px;
+}

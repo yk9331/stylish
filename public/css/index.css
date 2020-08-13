@@ -1,0 +1,92 @@
+#campaign-container{
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  height: 500px;
+}
+
+.step-icon{
+  position: absolute;
+  bottom: 20px;
+  z-index: 50;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.step-icon .circle{
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.step-icon .current{
+  background-color: #313538;
+}
+
+.campaign{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+}
+
+.campaign .story{
+  font-size: 20px;
+  line-height: 40px;
+  margin-left: 15%;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+.current {
+  opacity: 1;
+}
+
+#product-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product{
+  width: 28%;
+  margin: 2%;
+  flex: none;
+  display: block;
+  line-height: 2rem;
+  letter-spacing: 4px;
+}
+
+.product .picture{
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  object-fit: cover;
+}
+
+.product .color-container{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  
+}
+
+.product .color-box{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  box-shadow: 0 0 1px #bbbbbb;
+  vertical-align: middle;
+}
+
+
+

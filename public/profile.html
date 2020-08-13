@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ecommerce website for learning." />
+    <title>Stylish | User Profile</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/profile.css"/>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/profile.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="./"><img src="imgs/logo.png" /></a></div>
+		<nav>
+			<div class="tab"><a href="./?tag=women">女裝</a></div>
+			<div class="tab"><a href="./?tag=men">男裝</a></div>
+			<div class="tab"><a href="./?tag=accessories">配件</a></div>
+		</nav>
+		<div id="feature" class="feature">
+			<form id="search-form" class="search-form" action="./">
+				<input id="search-input" class="search" type="text"/>
+			</form>
+			<a href="./cart.html" class="tab cart"><div id="cart-qty" class="qty"></div></a>
+			<a href="./profile.html" class="tab menber"><img src="imgs/member.png"/></a>
+		</div>
+    </header>  
+    
+    <div class="divider"></div>
+    <main> 
+      <div class="wrapper">
+        <form id="sign-up-form" class="form">
+          <p id="sign-up-message" class="message"></p>
+          <label>Email</label>
+          <input id="sign-up-form-email" name="email" type="email" required>
+          <label>User Name</label>
+          <input id="sign-up-form-name" name="name" type="text" required>
+          <label>Password</label>
+          <input id="sign-up-form-password" name="password" type="password" required>
+          <button type="submit">Sign Up</button>
+          <p>Already have an account?<a href="./profile.html">&nbsp Sign In &nbsp</a></p>
+        </form>
+        <form id="sign-in-form" class="form">
+          <p id="sign-in-message" class="message"></p>
+          <label>Email</label>
+          <input id="sign-in-form-email" name="email" type="email" required>
+          <label>Password</label>
+          <input id="sign-in-form-password" name="password" type="password" required>
+          <button type="submit">Sign In</button>
+          <p>Don't have an account?<a href="./profile.html?tag=signup">&nbsp Sign Up &nbsp</a></p>
+        </form>
+        <div id="fb-btn" class="login-wrapper">
+          <div class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width="300px" scope="public_profile,email" onlogin="app.user.fb.checkLoginState();"></div>
+        </div>
+        <div id="user-info" class="user-info"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <div class="link link-0">
+          <a class="tab">關於 Stylish</a>
+          <a class="tab">服務條款</a>
+          <a class="tab">隱私政策</a>
+        </div>
+        <div class="link link-1">
+          <a class="tab">聯絡我們</a>
+          <a class="tab">FAQ</a>
+        </div>
+        <div class="social">
+          <a><img src="imgs/line.png" /></a>
+          <a><img src="imgs/twitter.png" /></a>
+          <a><img src="imgs/facebook.png" /></a>
+        </div>
+        <p class="copyright">&copy; 2018. All rights reserved.</p>
+      </div>
+    </footer>
+  <div id="loading" class="loading">
+    <img src="imgs/loading.gif" />
+  </div>
+</body>

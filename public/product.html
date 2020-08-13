@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ecommerce website for learning." />
+    <title>Stylish | Product Information</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/product.css"/>
+    <script src="js/lib.js"></script>
+    <script src="js/product.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="./"><img src="imgs/logo.png" /></a></div>
+		<nav>
+			<div class="tab"><a href="./?tag=women">女裝</a></div>
+			<div class="tab"><a href="./?tag=men">男裝</a></div>
+			<div class="tab"><a href="./?tag=accessories">配件</a></div>
+		</nav>
+		<div id="feature" class="feature">
+			<form id="search-form" class="search-form" action="./">
+				<input id="search-input" class="search" type="text"/>
+			</form>
+			<a href="./cart.html" class="tab cart"><div id="cart-qty" class="qty"></div></a>
+			<a href="./profile.html" class="tab menber"><img src="imgs/member.png"/></a>
+		</div>
+    </header>  
+    <div class="divider"></div>
+
+    <main>
+      <div class="wrapper">
+        <div id="product">
+          <div id="product-main-image" class="main-image"></div>
+          <div class="details">
+            <h3 id="product-name" class="name"></h3>
+            <p id="product-id" class="id"></p>
+            <p id="product-price" class="price"></p>
+            <div id="product-colors" class="colors">
+              <span class="title">顏色  ｜</span>
+            </div>
+            <div id="product-sizes" class="sizes">
+              <span class="title">尺寸  ｜</span>
+            </div>
+            <div class="quantity">
+              <span class="title">數量  ｜</span>
+              <div class="chooser">
+                <button onclick="app.product.updateQuantityEvt(-1)">-</button>
+                <input id="product-quantity" step="1" type="number" value="1" min="1" disabled>
+                <button onclick="app.product.updateQuantityEvt(1)">+</button>
+              </div>
+              <div id="out-of-stock">Sold Out</div>
+            </div>
+            <button id="product-add-button">加入購物車</button>
+            <p id="product-summary" class="summary"></p>
+          </div>
+          <div class="sepatator">
+            <p class="text">更多產品資訊</p>
+            <div class="line"></div>
+          </div>
+          <div class="description">
+            <p id="product-story" class="story"></p>
+            <div id="product-images" class="images"></div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <div class="link link-0">
+          <a class="tab">關於 Stylish</a>
+          <a class="tab">服務條款</a>
+          <a class="tab">隱私政策</a>
+        </div>
+        <div class="link link-1">
+          <a class="tab">聯絡我們</a>
+          <a class="tab">FAQ</a>
+        </div>
+        <div class="social">
+          <a><img src="imgs/line.png" /></a>
+          <a><img src="imgs/twitter.png" /></a>
+          <a><img src="imgs/facebook.png" /></a>
+        </div>
+        <p class="copyright">&copy; 2018. All rights reserved.</p>
+      </div>
+    </footer>
+    <div id="loading" class="loading">
+      <img src="imgs/loading.gif" />
+    </div>
+  </body>

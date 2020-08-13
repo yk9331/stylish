@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font: 400 16px/24px Roboto;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+}
+
+ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+form{
+    text-align: left;
+    width: 500px;
+    margin: 0 auto;
+}
+
+form div{
+    margin: 1rem 0;
+}
+
+.info textarea,
+.info select,
+.info input{
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea{
+    height: 100px
+}
+
+button{
+    display: block;
+    width: 100%;
+    margin: 1rem 0 1rem auto;
+}
+
+#stock-container{
+    border: 1px solid black;
+    padding: 0 1rem; 
+}
+.stock-item{
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.stock-item:last-child{
+    margin-bottom: 0;
+}
+
+#submit-btn{
+    margin-top: 2rem;
+    height: 50px;
+}
+
+.stock-color{
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+.color-input{
+    display: none;
+}
+
+.stock-info select{
+    width: 30%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.stock-info input{
+    width: 25%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.login-wrapper {
+    margin: 2rem 2rem;
+  }

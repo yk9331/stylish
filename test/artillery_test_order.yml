@@ -1,0 +1,16 @@
+config:
+  target: "http://stylish-clb-1418914001.us-east-2.elb.amazonaws.com"     #Auto Scaling Load Balancer
+  #target: "http://stylish-alb-2119849206.us-east-2.elb.amazonaws.com"    #Load Balancer
+  #target: "http://3.13.102.220:3001"
+  #target: "http://3.135.240.214:3001"
+  http:
+    pool: 20
+  phases:
+    - duration: 1000
+      arrivalRate: 15
+scenarios:
+  - flow:
+    - get:
+        url: "/api/1.0/order/payments"
+        #url: "/api/1.0/order/paymentsByMySQL"
+        #url: "/api/1.0/order/paymentsByRedis"

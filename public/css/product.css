@@ -1,0 +1,204 @@
+main{
+  margin-top: 100px;
+}
+
+img{
+  width: 100%;
+}
+
+/* Container */
+#product,
+.no-result{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 980px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.no-result{
+  margin-top: 20%;
+}
+
+.main-image{
+  width: 50%;
+  margin: 2%;
+}
+
+.details{
+  width: 40%;
+  font-size: 18px;
+  line-height: 1.5rem;
+  margin: 2%;
+}
+
+.sepatator{
+  width: 94%;
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.description{
+  width: 94%;
+  line-height: 1.5rem;
+}
+
+
+/* Details */
+.name{
+  letter-spacing: 6px;
+  font-weight: 600; 
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.id{
+  color: #bababa;
+  margin: 5px 0 20px 0;
+  font-weight: 400; 
+  letter-spacing: 4px;
+}
+
+.title{
+  margin-right: 10px;
+}
+
+.price{
+  font-weight: 600; 
+  font-size: 1.2em;
+  border-bottom: 1px solid #3f3a3a;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  
+}
+
+.colors{
+  margin-bottom: 20px;
+}
+.color-item{
+  display: inline-block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #979797;
+  cursor: pointer;
+  vertical-align: middle;
+  box-shadow: 0 0 1px #bbbbbb;
+}
+.colors .current{
+  outline: 1px solid #3f3a3a;
+}
+.colors .disable{
+  background: linear-gradient(135deg, transparent 47%, #979797 47%, transparent 53%, transparent 53%);
+}
+
+.sizes{
+  margin-bottom: 20px;
+}
+.size-item{
+  display: inline-block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #ececec;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.sizes .current{
+  color: #ffffff;
+  background-color: #3f3a3a;
+}
+
+.sizes .disable{
+  color: #979797;
+  opacity: 0.7;
+}
+
+.quantity .chooser{
+  display: inline-block;
+  border: 1px solid #979797;
+  padding: 5px;
+}
+
+.quantity button{
+  border: none;
+  background-color: inherit;
+  line-height: 1.5rem;
+  width: 30px;
+  cursor: pointer;
+}
+
+.quantity button:focus{
+  outline: none;
+  border: none;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity input{
+  border: none;
+  text-align: center;
+  line-height: 1.5rem;
+  width: 90px;
+  color: #8b572a;
+}
+
+#out-of-stock{
+  color: #8b572a;
+  display: inline-block;
+  margin-left: 10px;
+  display: none;
+}
+
+#product-add-button{
+  width: 300px;
+  max-width: 100%;
+  margin: 30px 0;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #3f3a3a;
+  border: 1px solid #979797;
+  font-weight: 600;
+  letter-spacing: 4px;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.summary{
+  margin: 0;
+}
+
+/* Sepatator */
+.text{
+  width: 150px;
+  margin: 0;
+  color: #8b572a;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: #3f3a3a;
+}
+
+/* Description */
+.story{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.description img{
+  margin-bottom: 30px;
+  width: 100%;
+}

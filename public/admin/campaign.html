@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Campaign Management</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./stylesheet/normalize.css">
+        <link rel="stylesheet" href="./stylesheet/style.css"> 
+    </head>
+    <body>
+        <header>
+            <h1>Campaign Management</h1>
+            <h2>Add New Campaign</h2>
+        </header>
+        <main>
+            <form id="campaign-form"action="/admin/campaign" method="post" enctype="multipart/form-data">
+                <section class="info">
+                    <h3>Campaign Info</h3>
+                    <div>
+                        <label for="product_id">Product</label>
+                        <select id="product_id" name="product_id"></select>
+                    </div>
+                    <div>
+                        <label for="picture">Campaign Image</label>
+                        <input id="picture" name="picture" type="file" required>
+                    </div>
+                    <div>
+                        <label for="story">Story</label>
+                        <textarea id="story" name="story"></textarea>
+                    </div>
+                </section>
+                <button id="submit-btn" type="submit">Submit Product</button>
+                
+            </form>
+        </main>
+        <script src="./javascript/lib.js"></script>
+        <script src="./javascript/campaign.js"></script>
+    </body>
+</html>
