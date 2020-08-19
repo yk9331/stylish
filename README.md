@@ -1,7 +1,13 @@
 # STYLiSH
 An e-commerce website including catalog, product searching, shopping cart, and user system.
 
-[Website](https://stylish.yenchenkuo.com)
+[Homepage](https://stylish.yenchenkuo.com)
+
+## Features
+* Catelog paging and loding on scroll
+* Product Search
+* Shopping Cart
+* User System 
 
 ## Technologies
 ### Architecture
@@ -11,7 +17,7 @@ An e-commerce website including catalog, product searching, shopping cart, and u
 * Environment: Linux + **Node.js**
 * Framework: **Express.js**
 * User Authorization: **JWT**
-* Design Pattern: MVC, RESTful API
+* Design Pattern: **MVC**, **RESTful API**
 
 ### Front-End 
 * HTML
@@ -22,7 +28,6 @@ An e-commerce website including catalog, product searching, shopping cart, and u
 * **RDS** + **MySQL**
 * Schema: 
 ![](https://i.imgur.com/2Cqe4bA.png)
-
 
 ### Networking
 * Protocol: **HTTP & HTTPs**
@@ -38,8 +43,10 @@ An e-commerce website including catalog, product searching, shopping cart, and u
 * **EC2** + **ELB** + **Auto Scaling**
 * **S3** + **CloudFront**
 
-
-### Database Schema
+### Third-party SDK
+* Login: Facebook SDK
+* Payment: TapPay SDK
 
 ## Contact
-email: yenchenkuo9331@gmail.com
+Yen-Chen Kuo
+yenchenkuo9331@gmail.com
