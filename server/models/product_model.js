@@ -1,7 +1,7 @@
 const { query } = require('../util/db')
 const redis = require('../util/redis')
 const Product = {}
-const imagePath = 'https://d59t0xo2t86xp.cloudfront.net/assets/products/'
+const imagePath = process.env.AWS_IMAGE_URL + '/assets/products/'
 
 /* ---------------------Create Product Data--------------------- */
 Product.insertProduct = async function (product) {

@@ -1,7 +1,7 @@
 const { query } = require('../util/db')
 const redis = require('../util/redis')
 const Campaign = {}
-const imagePath = 'https://d59t0xo2t86xp.cloudfront.net/assets/campaigns/'
+const imagePath = process.env.AWS_IMAGE_URL + '/assets/campaigns/'
 
 Campaign.createCampaign = async function (productID, filename, story) {
   const campaign = {
